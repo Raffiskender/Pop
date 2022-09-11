@@ -1,0 +1,57 @@
+# COMPOSER
+/vendor
+
+# WORDPRESS - 
+
+# Core
+#
+# you can delete this whole section/until Configuration.
+/wordpress/wp-admin/
+/wordpress/wp-includes/
+/wordpress/index.php
+/wordpress/license.txt
+/wordpress/readme.html
+/wordpress/wp-*.php
+/wordpress/xmlrpc.php
+
+# Configuration
+/wordpress/wp-config.php
+!/wordpress/wp-config-sample.php
+
+# Uploads
+/wordpress/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/wordpress/.htaccess
+
+# Plugins
+
+!/wordpress/wp-content/plugins/
+/wordpress/wp-content/plugins/*
+!/wordpress/wp-content/plugins/poils-o-pattes/
+/wordpress/wp-content/plugins/poils-o-pattes/vendor-poils-o-pattes/
+
+#JWT : adding customer ID in login's return.
+!/wordpress/wp-content/plugins/jwt-authentication-for-wp-rest-api/
+/wordpress/wp-content/plugins/jwt-authentication-for-wp-rest-api/*
+!/wordpress/wp-content/plugins/jwt-authentication-for-wp-rest-api/public/
+/wordpress/wp-content/plugins/jwt-authentication-for-wp-rest-api/public/*
+!/wordpress/wp-content/plugins/jwt-authentication-for-wp-rest-api/public/class-jwt-auth-public.php
+
+#language
+
+# Allow anyone to register by REST API
+# A function of this file had to be changed to allow anyone to register throught the WP REST API.
+# Else, it would send back a 401.
+# More information on https://stackoverflow.com/questions/49649513/wordpress-rest-api-user-registration
+
+!/wordpress/wp-includes/
+/wordpress/wp-includes/*
+!/wordpress/wp-includes/rest-api/
+/wordpress/wp-includes/rest-api/*
+!/wordpress/wp-includes/rest-api/endpoints/
+/wordpress/wp-includes/rest-api/endpoints/*
+!/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php

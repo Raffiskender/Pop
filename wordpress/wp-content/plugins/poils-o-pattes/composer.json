@@ -1,0 +1,10 @@
+{
+	"autoload": {
+		"psr-4":{
+			"Poils_o_pattes\\":"./class"
+		}
+	},
+	"config": {
+		"vendor-dir": "vendor-poils-o-pattes"
+	}
+}

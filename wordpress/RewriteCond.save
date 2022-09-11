@@ -1,0 +1,2 @@
+RewriteRule ^(.*)$ https://www.raffiskender.com/$1 [R=301,L]
+

@@ -1,0 +1,158 @@
+/** TEXTS */
+h1{
+	line-height: 1em;
+}
+p{
+	font-size: 1.2em;
+	margin-top: 0;
+	line-height: 0.5em;
+}
+p span {
+	font-weight: 800;
+	color : #009
+}
+.old{
+	color : grey;
+}
+.old span{
+	color : grey;
+}
+.state-edition
+{
+	display: none;
+}
+
+/** BOXES PLACEMENTS */
+.appointement{
+	display: flex;
+	margin-bottom: 1em;
+}
+.left{
+	width:40%;
+	border-bottom : 1px solid #ccc
+}
+
+.timeChoose, .newFormTimeChoose{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.orphelin{
+	margin-bottom: 1em;
+	margin-left:1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between ;
+	width: 10em; 
+}
+
+.orphelin>h3{
+	color: rgb(212, 0, 0);
+}
+
+
+.button-time{
+	display: block;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 7px;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+	background: rgb(62, 62, 255);
+	margin-top: 5px;
+	padding: 0.5em 1em;
+}
+
+.button-time:hover{
+	background: rgb(107, 107, 255);
+}
+
+.radio:checked + .button-time{
+	background: rgb(18, 153, 0);
+}
+
+.unavailable{
+	background: #aaa;
+}
+
+.unavailable{
+	background: #aaa;
+	cursor: default;
+}
+.unavailable:hover{
+	background: #aaa;
+}
+
+/**FORMS ELEMENTS */
+button{
+	color:blueviolet;
+	padding: 0.5em 1em;
+	border: none;
+	background: #ccc;
+	font-size: 1.1em;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.new{
+	margin-bottom: 1em;
+	color:rgb(28, 81, 224);
+	background: rgb(255, 255, 255);
+	border : 1px solid rgb(28, 81, 224);
+	
+}
+
+button:hover{
+	background: #aaa;				
+}
+
+button:disabled{
+	color : grey
+}
+button:disabled:hover{
+	background: #ccc;
+}
+
+.confirm{
+	text-align: center;
+	margin-top: 0.7em;
+	margin-bottom: 0.6em;
+}
+
+.confirmButtons{
+	display: flex;
+}
+
+.confirm-yes{
+	color:red;
+	border: 2px solid red;
+	font-weight:bold;
+}
+
+.right{
+	margin-left: 2em;
+	border-bottom : 1px solid #ccc
+}
+.form{
+	display: flex;
+	flex-direction: column;
+}
+.delete, .cancel{
+	margin-top: 1em;
+}
+
+.show{
+	display:inline;
+}
+
+input, select{
+	display: block;
+}
+
+.hide {
+	display: none !important;
+}
